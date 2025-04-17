@@ -75,23 +75,6 @@ input[type=text]:focus, input[type=password]:focus {
   clear: both;
   display: table;
 }
-/*Registration*/
-
-/*User Dahsboard*/
-
-/*Event list*/
-
-/*User Profile*/
-
-/*Event Registration form*/
-
-/*Payment*/
-
-/*Organisation Dashbaord*/
-
-/*Create Event*/
-
-/*Current Event*/
 
 /*Previous Event*/
 

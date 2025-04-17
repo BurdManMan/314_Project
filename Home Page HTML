@@ -45,9 +45,19 @@
         <h2>Networking Sessions</h2>
       </div>
       <div class="type-column">
+        <img src="https://media.istockphoto.com/id/1372270494/vector/people-donate-money-for-charity-or-crowdfunding.jpg?s=612x612&w=0&k=20&c=FlRfsTUxE06xTFM9Sgp6l6iKuqAUyQIcJoWjQUPZQiA=" 
+        alt="fundraier image" style="width:100%; border-radius:50%">
+        <h4>Fundraisers</h4>
+      </div>
+      <div class="type-column">
         <img src="https://media.istockphoto.com/id/1341238845/vector/business-presentation-flat-color-vector-illustration.jpg?s=612x612&w=0&k=20&c=Q_ZdJGoS09hmX5NrrzpKx94sC-os_xus3pGpYsBYRTA=" 
         alt="seminar image" style="width:100%; border-radius:50%">
-        <h2>Seminars</h2>
+        <h4>Seminars</h4>
+      </div>
+      <div class="type-column">
+        <img src="https://img.freepik.com/free-vector/business-people-illustration_52683-34835.jpg" 
+        alt="workshop image" style="width:100%; border-radius:50%">
+        <h4>Workshops</h4>
       </div>
     </div>
 

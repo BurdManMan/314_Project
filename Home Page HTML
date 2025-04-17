@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang-"en">
+  <head>
+    <meta charset="UTF 8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS.css">
+  </head>
+  <body>
+
+    <div>
+      <a class="logo">CompanyLogo</a>
+    </div>
+
+    <div class="background-image">
+      <form id="login-form">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Please enter username.." required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Please enter password" required>
+
+        <button type="submit" class="login-btn">Login</button>
+        
+        <button type="button" class="sign-up-btn">Sign up</button>
+           
+        <button type="button" class="forgot-password-btn">Forgot password?</button>
+      </form>
+    </div>
+
+    <div class="type-row">
+      <div class="type-column">
+        <img src="https://www.kdmevents.co.uk/wp-content/uploads/2020/08/boost-conference-engagement.jpg" 
+        alt="conferencing image" style="width:100%; border-radius:50%">
+        <h2>Conferences</h2>
+      </div >
+      <div class="type-column">
+        <img src="https://media.istockphoto.com/id/1225956371/vector/famous-rock-band-playing-music-and-singing-at-stage.jpg?s=612x612&w=0&k=20&c=HI92YrAqlMAUBC26eSUhtX1acqPvR0x6bYgxH7zlg9M=" 
+        alt="music concert image" style="width:100%; border-radius:50%">
+        <h2>Music Concert</h2>
+      </div>
+      <div class="type-column">
+        <img src="https://media.istockphoto.com/id/1062169958/vector/vector-illustration-flat-style-businessmen-discuss-social-network-group-of-people-news.jpg?s=612x612&w=0&k=20&c=eUWibMvbR3UsCQe2tnC6PF06O9SNJHx--wPy2yxd8Pg=" 
+        alt="networking image" style="width:100%; border-radius:50%">
+        <h2>Networking Sessions</h2>
+      </div>
+      <div class="type-column">
+        <img src="https://media.istockphoto.com/id/1341238845/vector/business-presentation-flat-color-vector-illustration.jpg?s=612x612&w=0&k=20&c=Q_ZdJGoS09hmX5NrrzpKx94sC-os_xus3pGpYsBYRTA=" 
+        alt="seminar image" style="width:100%; border-radius:50%">
+        <h2>Seminars</h2>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

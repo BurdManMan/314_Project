@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <Title>Guest Dashboard</Title>
-    <link rel="stylesheet" href="CSS.css"
+    <link rel="stylesheet" href="CSSGuestDashboard.css"
   </head>
   <body>
 

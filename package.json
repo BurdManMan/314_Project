@@ -1,0 +1,14 @@
+{
+  "name": "csit314-code-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest tests/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}

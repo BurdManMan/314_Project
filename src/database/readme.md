@@ -15,4 +15,8 @@ Steps to setup Event Management DB
 
 
 ## Notes
-There is some sample data I will add if you would like to verify it all works
+There is some sample data I will add if you would like to verify it all works, to run the sample data:
+1. Select your "event_management" database
+2. Right-click on it and select "Query Tool"
+3. Open the "sample_data.sql" file and click Execute or use F5 to run
+4. Repeat with "clear_sample_data.sql" to remove the sample data

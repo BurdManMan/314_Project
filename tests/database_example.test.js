@@ -1,4 +1,4 @@
-const { get_name_from_db } = require('../src/database_example');
+const { get_name_from_db } = require('../database_example');
 
 describe('get_name_from_db', () => {
   // Happy path - successful cases

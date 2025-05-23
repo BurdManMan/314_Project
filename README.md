@@ -36,3 +36,9 @@ To run the sample data:
 2. Right-click on it and select "Query Tool"
 3. Open the "sample_data.sql" file and click Execute or use F5 to run
 4. Repeat with "clear_sample_data.sql" to remove the sample data
+
+## Running the program
+
+1. Open command line and navigate to project folder.
+2. Enter command 'node backend/server.js' to start the server.
+3. A link to the website will be printed in the command line.

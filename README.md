@@ -40,5 +40,5 @@ To run the sample data:
 ## Running the program
 
 1. Open command line and navigate to project folder.
-2. Enter command 'node backend/server.js' to start the server.
+2. Enter command 'node backend\server.js' to start the server.
 3. A link to the website will be printed in the command line.

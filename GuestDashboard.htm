@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <Title>Guest Dashboard</Title>
+    <link rel="stylesheet" href="CSSGuestDashboard.css">
+  </head>
+  <body onload="openDefaultTab()">
+    <div class="topnav">
+      <img src="https://t3.ftcdn.net/jpg/04/75/78/54/360_F_475785478_r4vZ4DydgWeyFtqzPqkdndONspyNYenO.jpg"
+      alt="logo" class="logo-image">
+      <div class="topnav-right">
+        <a href="GuestDashboard.html">Event</a>
+        <a href="GuestProfile.html">Profile</a>
+      </div>
+    </div>
+    <!-- Content Areas -->
+    <div id="Events" class="tabcontent">
+      <h1>Events</h1>
+
+      <div class="dashboard-container">
+        <header>
+          <input type="text" id="search-bar" placeholder="Search for events..." />
+        </header>
+        
+        <main>
+          <aside class="filters">
+            <h3>Filter By</h3>
+
+            <div class="filter-group">
+              <label>Event Type</label>
+              <div id="type-buttons" class="type-buttons">
+                <button data-type="" class="active">All</button>
+                <button data-type="conference">Conference</button>
+                <button data-type="fundraiser">Fundraiser</button>
+                <button data-type="party">Party</button>
+              </div>
+            </div>
+    
+            <div>
+              <label>Location</label>
+              <input type="text" id="location-filter" placeholder="e.g. Sydney" />
+            </div>
+    
+            <div>
+              <label>Max Price</label>
+              <input type="range" id="price-filter" min="0" max="500" step="10" />
+              <span id="price-value">$0 - $500</span>
+            </div>
+          </aside>
+    
+          <section class="event-list" id="event-list">
+            <!-- Events will be loaded here -->
+          </section>
+        </main>
+      
+    </div>
+
+
+
+
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

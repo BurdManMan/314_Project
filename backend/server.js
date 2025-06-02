@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser'); // Allows for reading of JSON body text.
 const cors = require('cors'); // Allows backend API to be accessed from different domains.
 const db = require('./db'); // Connects to database and provides easy query functionaility.
+const bcrypt = require('bcrypt'); // Allows for password encryption.
 const path = require('path');
+
 
 const app = express();
 app.use(cors());
@@ -29,8 +31,9 @@ app.post('/api/login', async (req, res) => {
 
         const user = rows[0];
 
-        // Compare passwords
-        if (password !== user.password) {
+        // Compare hashed password to user input
+        const passwordMatch = await bcrypt.compare(password, user.password);
+        if (!passwordMatch) {
             return res.status(401).json({ error: 'Invalid credentials '});
         }
 
@@ -55,12 +58,13 @@ app.post('/api/register', async (req, res) => {
     try {
         // Start transaction
         await db.query('BEGIN');
+        const hashedPassword = await bcrypt.hash(password, 10);
 
         // Insert into site_user
         const userQuery = `
             INSERT INTO site_user(account_name, account_type, username, password)
             VALUES($1, $2, $3, $4) RETURNING site_user_id`;
-        const userValues = [account_name, account_type, username, password];
+        const userValues = [account_name, account_type, username, hashedPassword];
         const { rows: userRows } = await db.query(userQuery, userValues);
 
         // Insert into customer or organiser based on account_type
@@ -80,6 +84,44 @@ app.post('/api/register', async (req, res) => {
     }
 });
 
+// Organiser Event Creation Endpoint
+app.post('/api/createEvent', async (req, res) => {
+  const {
+    name,
+    location,
+    date,
+    category,
+    description,
+    ticket_total
+  } = req.body;
+
+  try {
+    // Replace this with actual organiser_id from session/auth context when full log-in access is functional
+    const organiserId = 2;
+
+    const insertQuery = `
+      INSERT INTO event (
+        organiser_id, name, location, event_date, category, description, ticket_total, tickets_available
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $7)
+      RETURNING event_id
+    `;
+
+    const { rows } = await db.query(insertQuery, [
+      organiserId,
+      name,
+      location,
+      date,
+      category,
+      description,
+      ticket_total
+    ]);
+
+    res.status(201).json({ success: true, event_id: rows[0].event_id });
+  } catch (err) {
+    console.error('Error creating event:', err);
+    res.status(500).json({ success: false, error: 'Server error while creating event' });
+  }
+});
 // More endpoints here...
 
 // Serve the home page

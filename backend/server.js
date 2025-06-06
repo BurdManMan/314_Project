@@ -75,6 +75,13 @@ app.post('/api/register', async (req, res) => {
                 [userRows[0].site_user_id, name, email]
             );
         }
+		
+		if (account_type === 'Organiser') {
+            await db.query(
+                'INSERT INTO organiser(site_user_id, name, email) VALUES($1, $2, $3)',
+                [userRows[0].site_user_id, name, email]
+            );
+        }
 
         await db.query('COMMIT');
         res.status(201).json({ success: true });

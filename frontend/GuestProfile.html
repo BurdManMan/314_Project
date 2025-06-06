@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <Title>Guest Dashboard</Title>
+    <link rel="stylesheet" href="CssGuestProfile.css">
+  </head>
+  <body onload="openDefaultTab()">
+    <div class="topnav">
+      <img src="https://t3.ftcdn.net/jpg/04/75/78/54/360_F_475785478_r4vZ4DydgWeyFtqzPqkdndONspyNYenO.jpg"
+      alt="logo" class="logo-image">
+      <div class="topnav-right">
+        <a href="GuestDashboard.html">Event</a>
+        <a href="GuestProfile.html">Profile</a>
+      </div>
+    </div>
+    <!-- Content Areas -->
+    <div class="row">
+      <div class="column">
+        <div class="left">
+          <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png"
+          alt="profile-picture" class="profile-picture">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="right">
+          <div class="user-details">
+            <h2 id="user-name">Loading...</h2>
+            <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+            <p><strong>Phone:</strong> <span id="user-phone">Loading...</span></p>
+            <p><strong>Address:</strong> <span id="user-address">Loading...</span></p>
+          </div>
+          <button class="edit-button">Edit Profile</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="recent-activities">
+      <div class="A-heading">
+        <h4>Recent Activities</h4>
+      </div>
+      <div id="events-container">
+        <!-- Example Event Card -->
+        <div class="event-card">
+          <h5 class="event-name">Tech Conference 2024</h5>
+          <p><strong>Date:</strong> <span class="event-date">April 15, 2024</span></p>
+          <p><strong>Location:</strong> <span class="event-location">San Francisco, CA</span></p>
+          <p><strong>Status:</strong> <span class="event-status">Attended</span></p>
+          <p><strong>Ticket:</strong> <span class="event-ticket">#TICKET12345</span></p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

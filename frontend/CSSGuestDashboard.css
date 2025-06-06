@@ -1,0 +1,203 @@
+/*top navigation bar*/
+html, body{
+  background-color: #FAFBFB;
+  color: #1A2417;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  background-color: #ABC8A2;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+/* Logo Image Styling */
+.logo-image {
+  height: 50px;       
+  width: auto;        
+}
+.topnav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1A2417;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.topnav-right a:hover {
+  background-color: #A7556A;
+  color: #FAFBFB;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav-right {
+    margin-top: 10px;
+  }
+
+  .topnav-right a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+/*Events Tab*/
+html, body {
+  margin: 0;
+  background: #f9f9f9;
+  padding: 0;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.tabcontent{
+margin: 0% 2% 0% 2%;
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 20px;
+}
+
+#search-bar {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 40px auto;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.filters {
+  width: 300px; /* adjust as needed */
+  background: #f2f2f2;
+  padding: 20px;
+  height: 100%;          /* full height of the main area */
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.event-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.event-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.event-card img {
+  width: 150px;
+  height: auto;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 0 0 10px;
+}
+
+.filter-group{
+  margin-bottom: 10%;
+}
+.type-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.type-buttons button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.type-buttons button.active {
+  background-color: #ABC8A2;
+  color: white;
+  border-color: #ABC8A2;
+}
+
+.type-buttons button:hover {
+  background-color: #dbe8cf;
+}
+
+/*Register for Event*/
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.close-button {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*Payment*/
+
+
+/*Profile Tab*/
+

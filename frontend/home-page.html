@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSSHomePage.css">
+  </head>
+  <body>
+
+    <div class="topnav">
+      <img src="https://t3.ftcdn.net/jpg/04/75/78/54/360_F_475785478_r4vZ4DydgWeyFtqzPqkdndONspyNYenO.jpg"
+      alt="logo" class="logo-image">
+      <div class="topnav-right">
+        <a href="home-page.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="background-image">
+      <div class="login-row">
+        <div class="guest-login">
+          <form id="login-g">
+            <h2>Guest Login</h2>
+            <label for="guest-username">Username</label>
+            <input type="text" id="guest-username" placeholder="Please enter username.." required>
+
+            <label for="guest-password">Password</label>
+            <input type="password" id="guest-password" placeholder="Please enter password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+            
+            <button type="button" class="sign-up-btn" onclick="document.getElementById('guestModal').style.display='block'">Sign up</button>
+              
+            <a href="Forgot Password" class="fgt-guest">Forgot Password</a>
+          </form>
+        </div>
+        <div class="organiser-login">
+          <form id="login-o">
+            <h2>Organiser Login</h2>
+            <label for="organiser-username">Username</label>
+            <input type="text" id="organiser-username" placeholder="Please enter username.." required>
+
+            <label for="organiser-password">Password</label>
+            <input type="password" id="organiser-password" placeholder="Please enter password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+            
+            <button type="button" class="sign-up-btn" onclick="document.getElementById('organiserModal').style.display='block'">Sign up</button>
+              
+            <a href="Forgot Password" class="fgt-organiser">Forgot Password</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+        <!-- Guest Registration Modal -->
+    <div id="guestModal" class="modal">
+      <span onclick="document.getElementById('guestModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content guest-registration">
+        <div class="container">
+          <h1>Guest Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="guest-name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="guest-name" required>
+
+          <label for="guest-phone"><b>Phone Number</b></label>
+          <input type="tel" placeholder="0482 729 372" name="guest-phone" required>
+
+          <label for="guest-email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="guest-email" required>
+
+          <label for="guest-psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="guest-psw" required>
+
+          <label for="guest-psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="guest-psw-repeat" required>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('guestModal').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Organiser Registration Modal -->
+    <div id="organiserModal" class="modal">
+      <span onclick="document.getElementById('organiserModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content organiser-registration">
+        <div class="container">
+          <h1>Organiser Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="organiser-name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="organiser-name" required>
+
+          <label for="organiser-phone"><b>Phone Number</b></label>
+          <input type="tel" placeholder="0482 729 372" name="organiser-phone" required>
+
+          <label for="organiser-company-name"><b>Company Name</b></label>
+          <input type="text" placeholder="Enter Your Company Name" name="organiser-company-name" required>
+
+          <label for="organiser-email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="organiser-email" required>
+
+          <label for="organiser-psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="organiser-psw" required>
+
+          <label for="organiser-psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="organiser-psw-repeat" required>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('organiserModal').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="headline-quote">
+      <h1 class="H-quote1">Discover and Manage Events with Ease</h1>
+      <h4 class="H-quote2">For guests looking for exiciting events, and organisers ready to host them</h4>
+    </div>
+    
+    
+    <div class="event-type-row">
+      <h2 class="event-type-text">Event is your all-in-one platform to create, discover, and manage every kind of event</h2>
+      <div class="column">
+        <div class="card">
+          
+          <p>Business Conferences</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          
+          <p>Music Concerts</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          
+          <p>Netwroking Sessions</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          
+          <p>Reunions</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="review-row">
+      <h2 class="review-heading">Don't Just Take Our Word For It</h2>
+      <h3 class="review-heading2">Discover why event organizers and guests alike choose Event to plan, promote, and experience unforgettable moments</h3>
+      <div class="review-col">
+        <div class="review-card">
+          <img>
+          <p>Sarah T.</p>
+          <p>"Finding local events has never been easier! I just log in, browse categories, and register in seconds — no hassle at all."</p>
+        </div>
+      </div>
+      <div class="review-col">
+        <div class="review-card">
+          <img>
+          <p>Lisa K.</p>
+          <p>"Event has significantly streamlined our event creation process. The intuitive tools and real-time analytics allow us to manage attendees efficiently and assess performance with ease."</p>
+        </div>
+      </div>
+      <div class="review-col">
+        <div class="review-card">
+          <img>
+          <p>David M</p>
+          <p>"I love how clean and simple the site is. I found a weekend art workshop and booked it in less than five minutes!"</p>
+        </div>
+      </div>
+      <div class="review-col">
+        <div class="review-card">
+          <img>
+          <p>James R.</p>
+          <p>"As an organiser, having a platform that offers both flexibility and insight is invaluable. Event provides clear registration data, post-event feedback, and a seamless setup experience."</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="footer footer-row">
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>Careers</p>
+        <p>Reviews</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>Phone</p>
+        <p>(02)00 0000 0000</p>
+        <p>Email</p>
+        <p>event@mail.com</p>
+        <p>Address</p>
+        <p>123 Market Ln, NSW</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="homePage.js"></script>
+  </body>
+</html>

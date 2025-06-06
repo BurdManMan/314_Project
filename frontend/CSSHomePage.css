@@ -1,0 +1,399 @@
+/*Home Page*/
+html, body{
+  background-color: #FAFBFB;
+  color: #1A2417;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  background-color: #ABC8A2;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+/* Logo Image Styling */
+.logo-image {
+  height: 50px;       
+  width: auto;        
+}
+
+/* Right-side navigation links */
+.topnav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1A2417;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.topnav-right a:hover {
+  background-color: #A7556A;
+  color: #FAFBFB;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav-right {
+    margin-top: 10px;
+  }
+
+  .topnav-right a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+.background-image{
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/29/09/28/abstract-1780170_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 80vh;
+  margin-bottom: 100px;
+}
+
+.login-row {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  float: right;
+}
+
+#login-g, #login-o {
+  position: static; /* or just remove 'position' altogether */
+  margin: 20px;
+  max-width: 250px;
+  padding: 16px;
+  background-color: #FAFBFB;
+  border: 1px solid #ABC8A2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional for better UI */
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #FAFBFB;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.sign-up-btn, .login-btn{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ABC8A2;
+  color: #1A2417;
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+.fgt-organiser, .fgt-guest{
+  text-align: center;
+  display: block;
+}
+.sign-up-btn:hover{
+  opacity: 1;
+}
+
+.login-btn:hover{
+  opacity: 1;
+}
+
+.type-column{
+  float: left;
+  width: 16.66%;
+  padding: 5px;
+  text-align: center;
+}
+
+.type-row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styling for registration form*/
+input[type=text], input[type=password], input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #ABC8A2;
+  color: #FAFBFB;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #FAFBFB;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #ABC8A2;
+  width: 80%; 
+}
+
+hr {
+  border: 1px solid #FAFBFB;
+  margin-bottom: 25px;
+}
+ 
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FAFBFB;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.headline-quote{
+  display: flex;
+  flex-direction: column;        
+  justify-content: center;       
+  align-items: center;           
+  text-align: center;
+  background-color: #1A2417;
+  min-height: 600px;
+  padding: 0 20px;               
+  margin-bottom: 150px;
+  font-size: 20px;
+}
+.H-quote1{
+  color: #FAFBFB;
+}
+.H-quote2{
+  color: #ABC8A2;
+}
+
+/*event type styling*/
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.event-type-row {margin: 0 -5px;}
+
+.event-type-row{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 150px;
+}
+/* Clear floats after the columns */
+.event-type-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #ABC8A2;
+  color: #1A2417;
+  font-size: 20px;
+}
+
+.event-type-text{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1A2417;
+  font-size: 30px;
+}
+
+.fa {font-size:50px;}
+
+
+
+/*Reviews section styling*/
+
+.review-col {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.review-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.review-card {
+  padding: 16px;
+  text-align: center;
+  background-color: #ABC8A2;
+  color: #1A2417;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .review.col {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.review-row{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 300px;
+}
+.review-heading{
+  text-align: center;
+  color: #1A2417;
+  font-size: 30px;
+}
+.review-heading2{
+  text-align: center;
+  color: #1A2417;
+}
+
+/*Footer*/
+/* Layout for footer */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 0 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+
+/* Sticky to bottom when content is short */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* Push footer to bottom */
+}
+
+.footer {
+  background-color: #1A2417;
+  color: #FAFBFB;
+}
+.footer-col h4 {
+  color: #ABC8A2;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
